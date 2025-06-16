@@ -25,18 +25,19 @@
 
             <label for="dolar" id="label-dolar">
                 converter <b>para</b>
-                <select name="euro" id="euro">
+                <select class="convert-to">
                     <div class="box-option-euro">
-                        <option>US$ <span>Dolar americano</span></option>
-                        <option>€ <span>Euro</span></option>
-                        <option>£ Libras</option>
+                        <option value="dolar">US$ <span>Dolar americano</span></option>
+                        <option value="euro">€ <span>Euro</span></option>
+                        <option value="libras">£ Libras</option>
+                        <option value="bitcoin">Bitcoin</option>
                     </div>
                 </select>
             </label>
 
             <label for="converted-value">
                 <b>valor</b>
-                <input type="text" placeholder="R$ 0.00" name="converted-value" value="R$" id="converted-value">
+                <input type="number" placeholder="R$ 0.00" name="converted-value" id="converted-value" autocomplete="none">
             </label>
 
             <button class="convertButton">Converter</button>
@@ -52,8 +53,8 @@
             <img class="arrowImg" src="./assets/arrow.png" alt="seta">
 
             <div class="boxDolar">
-                <img src="./assets/dolar.png" alt="dolar">
-                <p class="converted-dolar">Dólar Americano</p>
+                <img class="currency-img" src="./assets/dolar.png" alt="dolar">
+                <p class="converted-currency">Dólar Americano</p>
                 <p class="converted-valor-dolar">US$ 0,00</p>
             </div>
         </section>
